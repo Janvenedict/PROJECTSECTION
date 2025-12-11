@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Projects Showcase</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons for Code and Demo links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f9; /* Light background for contrast */
+        }
+        .project-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e5e7eb;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            border-color: #3b82f6; /* Highlight border on hover */
+        }
+        .placeholder-box {
+            background-color: #e5e7eb; /* Light grey placeholder */
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <div class="max-w-7xl mx-auto">
+        <header class="text-center mb-10 md:mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">Featured Projects</h1>
+            <p class="text-lg text-gray-600 mt-2">Showcasing technical skills and development impact.</p>
+        </header>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Project Card 1: E-Commerce Platform -->
+            <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="placeholder-box rounded-t-xl">E</div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-900 mb-2">E-Commerce Platform</h2>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                        Modern e-commerce solution built with React, Node.js, and Stripe integration. Features include user authentication, cart management, and admin dashboard.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">React</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-full">Node.js</span>
+                        <span class="px-3 py-1 bg-gray-200 text-gray-700 text-xs font-medium rounded-full">MongoDB</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-full">Stripe</span>
+                    </div>
+                    <div class="flex space-x-4 text-sm font-medium text-gray-600">
+                        <a href="#" class="hover:text-blue-600 transition duration-150 ease-in-out">
+                            <i class="fa-solid fa-code mr-1"></i> Code
+                        </a>
+                        <a href="#" class="hover:text-blue-600 transition duration-150 ease-in-out">
+                            <i class="fa-solid fa-globe mr-1"></i> Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2: Task Management App -->
+            <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="placeholder-box rounded-t-xl">T</div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-900 mb-2">Task Management App</h2>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                        Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">React</span>
+                        <span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded-full">Firebase</span>
+                        <span class="px-3 py-1 bg-sky-100 text-sky-700 text-xs font-medium rounded-full">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-pink-100 text-pink-700 text-xs font-medium rounded-full">Framer Motion</span>
+                    </div>
+                    <div class="flex space-x-4 text-sm font-medium text-gray-600">
+                        <a href="#" class="hover:text-blue-600 transition duration-150 ease-in-out">
+                            <i class="fa-solid fa-code mr-1"></i> Code
+                        </a>
+                        <a href="#" class="hover:text-blue-600 transition duration-150 ease-in-out">
+                            <i class="fa-solid fa-globe mr-1"></i> Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3: Weather Dashboard -->
+            <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="placeholder-box rounded-t-xl">W</div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-900 mb-2">Weather Dashboard</h2>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                        Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-full">Vue.js</span>
+                        <span class="px-3 py-1 bg-red-100 text-red-700 text-xs font-medium rounded-full">OpenWeather API</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-xs font-medium rounded-full">Chart.js</span>
+                        <span class="px-3 py-1 bg-gray-300 text-gray-800 text-xs font-medium rounded-full">Vanilla CSS</span>
+                    </div>
+                    <div class="flex space-x-4 text-sm font-medium text-gray-600">
+                        <a href="#" class="hover:text-blue-600 transition duration-150 ease-in-out">
+                            <i class="fa-solid fa-code mr-1"></i> Code
+                        </a>
+                        <a href="#" class="hover:text-blue-600 transition duration-150 ease-in-out">
+                            <i class="fa-solid fa-globe mr-1"></i> Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Projects Grid -->
+
+    </div>
+
+</body>
+</html>z
